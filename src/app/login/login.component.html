@@ -1,0 +1,43 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-4 offset-md-4" style="margin-top:150px;">
+      <!-- <div class="card" >
+        <img class="card-img-top" src="http://www.assaybiotech.com/images/uploaded/1386077226banner-login.jpg" alt="Card image cap">
+        <div class="card-body">
+         
+        </div>
+      </div> -->
+
+
+
+      <mat-card class="example-card">
+        <mat-card-header>
+          
+          <mat-card-title>Welcome to <em>Your's Note</em></mat-card-title>
+          <mat-card-subtitle>Login with your credentials</mat-card-subtitle>
+        </mat-card-header>
+       
+        <mat-card-content>
+          <form class="example-form">
+            <div class="form-group">
+                <mat-form-field class="example-full-width">
+                    <input type="text" [(ngModel)]="username" name="username" matInput placeholder="Login ID">
+                  </mat-form-field>
+              </div>
+         
+              <div class="form-group">
+              <mat-form-field class="example-full-width">
+                <input type="password" [(ngModel)]="password" name="password" matInput placeholder="Password">
+              </mat-form-field>
+              </div>
+              <div class="text-right">
+                  <button mat-raised-button color="primary" (click)="login()">Sign In</button>
+              </div>
+              
+        </form>
+        </mat-card-content>
+       
+      </mat-card>
+    </div>
+  </div>
+</div>
